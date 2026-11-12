@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Shivam Electrical Works — Industrial, Commercial & Residential Electrical Contracting and Engineering Solutions. Website coming soon." />
   <title>Shivam Electrical Works | Website Coming Soon</title>
+  <link rel="icon" type="image/png" href="shivamenterprises_logo.png" />
+  <link rel="apple-touch-icon" href="shivamenterprises_logo.png" />
   <style>
     :root {
       --bg-primary: #090e1a;
@@ -71,23 +73,19 @@
       background: linear-gradient(90deg, transparent, var(--accent), transparent);
     }
 
-    .logo-badge {
-      width: 64px;
-      height: 64px;
+    .logo-wrapper {
       margin: 0 auto 1.5rem;
-      border-radius: 16px;
-      background: rgba(245, 158, 11, 0.1);
-      border: 1px solid var(--border-accent);
       display: flex;
-      align-items: center;
       justify-content: center;
-      box-shadow: 0 0 30px var(--accent-glow);
+      align-items: center;
     }
 
-    .logo-badge svg {
-      width: 32px;
-      height: 32px;
-      color: var(--accent);
+    .brand-logo {
+      height: 96px;
+      width: auto;
+      max-width: 100%;
+      object-fit: contain;
+      filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.45));
     }
 
     .status-pill {
@@ -208,6 +206,10 @@
         padding: 2.25rem 1.35rem;
       }
 
+      .brand-logo {
+        height: 80px;
+      }
+
       .services {
         grid-template-columns: 1fr;
       }
@@ -217,10 +219,14 @@
 <body>
   <main>
     <section class="container" aria-labelledby="company-heading">
-      <div class="logo-badge" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-        </svg>
+      <div class="logo-wrapper">
+        <img
+          src="shivamenterprises_logo.png"
+          alt="Shivam Enterprises Logo"
+          class="brand-logo"
+          width="125"
+          height="96"
+        />
       </div>
 
       <div class="status-pill">
@@ -254,7 +260,7 @@
             <rect width="20" height="16" x="2" y="4" rx="2"></rect>
             <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
           </svg>
-          shivamelectricalworks01@gmail.com
+          info@shivamelectricalworks.com
         </a>
       </div>
     </section>
