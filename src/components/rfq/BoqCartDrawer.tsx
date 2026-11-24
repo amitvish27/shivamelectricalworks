@@ -33,7 +33,6 @@ export default function BoqCartDrawer() {
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [copied, setCopied] = useState(false);
-  const [submitting, setSubmitting] = useState(false);
   const [statusMsg, setStatusMsg] = useState<{
     type: "success" | "error";
     text: string;
@@ -78,7 +77,7 @@ export default function BoqCartDrawer() {
     window.open(url, "_blank", "noopener,noreferrer");
   };
 
-  const handleEmailSubmit = async (e: React.FormEvent) => {
+  const handleEmailSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setStatusMsg(null);
 
@@ -94,50 +93,32 @@ export default function BoqCartDrawer() {
       return;
     }
 
-    setSubmitting(true);
-    try {
-      const res = await fetch("/api/rfq", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          source: "BOQ_CART",
-          company: siteName.trim(),
-          fullName: contactName.trim() || "BOQ Cart Inquiry",
-          phone: phone.trim(),
-          email: email.trim(),
-          executionScope,
-          boqText: formatBoqText(false),
-        }),
-      });
+    const recipient = company.contact.salesEmail || company.contact.email;
+    const subject = `[BOQ RFQ] ${siteName.trim()} — ${executionScope} Quote Request`;
+    const body = [
+      `Hello ${company.name} Team,`,
+      "",
+      `Please find our Project BOQ requirement below for: ${siteName.trim()}`,
+      `• Contact Name: ${contactName.trim() || "N/A"}`,
+      `• Mobile / WhatsApp: ${phone.trim()}`,
+      `• Email: ${email.trim() || "N/A"}`,
+      `• Commercial Scope: ${executionScope}`,
+      "",
+      formatBoqText(false),
+      "",
+      "Note: We can attach our SLD drawings, architectural layouts, or tender documents upon request.",
+    ].join("\n");
 
-      let data: { error?: string; referenceId?: string } = {};
-      const contentType = res.headers.get("content-type");
-      if (contentType && contentType.includes("application/json")) {
-        data = await res.json();
-      } else {
-        throw new Error(
-          "RFQ service is currently unreachable. Please submit via WhatsApp or call us directly."
-        );
-      }
+    const mailtoUrl = `mailto:${recipient}?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
 
-      if (!res.ok) {
-        throw new Error(data.error || "Failed to submit BOQ.");
-      }
-      setStatusMsg({
-        type: "success",
-        text: `Quote Request Received — Ref #${data.referenceId}. Our engineering desk will respond within ${company.turnaroundHours} business hours.`,
-      });
-    } catch (err) {
-      setStatusMsg({
-        type: "error",
-        text:
-          err instanceof Error
-            ? err.message
-            : "Could not send RFQ. Please try WhatsApp or call us directly.",
-      });
-    } finally {
-      setSubmitting(false);
-    }
+    window.location.href = mailtoUrl;
+
+    setStatusMsg({
+      type: "success",
+      text: "Opening your native email app with pre-filled BOQ items. You can review, attach drawings, and send.",
+    });
   };
 
   return (
@@ -379,11 +360,10 @@ export default function BoqCartDrawer() {
             <button
               type="submit"
               form="boq-email-form"
-              disabled={submitting}
-              className="inline-flex items-center justify-center gap-2 bg-copper hover:bg-copper-hover disabled:opacity-60 text-white font-bold text-sm py-2.5 px-3 rounded-md transition-colors"
+              className="inline-flex items-center justify-center gap-2 bg-copper hover:bg-copper-hover text-white font-bold text-sm py-2.5 px-3 rounded-md transition-colors"
             >
               <Mail className="w-4 h-4" />
-              <span>{submitting ? "Sending..." : "Email Official BOQ"}</span>
+              <span>Email Official BOQ</span>
             </button>
           </div>
           <div className="flex items-center justify-between text-xs">

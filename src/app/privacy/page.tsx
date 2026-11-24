@@ -152,7 +152,7 @@ export default function PrivacyPolicyPage() {
               <li className="flex items-start gap-2">
                 <span className="text-copper-dark font-bold">•</span>
                 <span>
-                  <strong className="text-slate-800">Email &amp; Hosting Infrastructure:</strong> Official RFQ submissions are processed through our secure server infrastructure and transactional email delivery providers strictly to deliver your enquiry to our engineering desk.
+                  <strong className="text-slate-800">Email Communications:</strong> When you choose to submit an RFQ via email, your enquiry is opened directly inside your device&apos;s native email application (such as Apple Mail, Gmail, or Outlook) addressed to our official commercial desk (<code className="text-xs bg-slate-100 px-1.5 py-0.5 rounded font-mono text-primary">{company.contact.email}</code>). We do not route your enquiry through intermediate third-party email API servers.
                 </span>
               </li>
               <li className="flex items-start gap-2">

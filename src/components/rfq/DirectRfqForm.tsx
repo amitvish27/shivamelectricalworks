@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { MessageCircle, Send } from "lucide-react";
+import { Mail, MessageCircle } from "lucide-react";
 import company from "@/data/company.json";
 
 const REQUIREMENT_TYPES = [
@@ -22,25 +22,38 @@ export default function DirectRfqForm() {
   const [email, setEmail] = useState("");
   const [reqType, setReqType] = useState(REQUIREMENT_TYPES[0]);
   const [details, setDetails] = useState("");
-  const [submitting, setSubmitting] = useState(false);
   const [result, setResult] = useState<{
     type: "success" | "error";
     text: string;
   } | null>(null);
 
-  const handleWhatsapp = () => {
-    const msg = [
+  const formatRfqText = () => {
+    return [
       `Hello ${company.name} Team,`,
       "",
       "New Project RFQ Enquiry:",
-      `• Name: ${fullName || "[Not provided]"}`,
-      `• Company: ${org || "[Not provided]"}`,
-      `• Mobile: ${phone || "[Not provided]"}`,
-      `• Requirement: ${reqType}`,
-      `• Site & Scope: ${details || "[Not provided]"}`,
+      `• Contact Name: ${fullName.trim() || "N/A"}`,
+      `• Company / Site: ${org.trim()}`,
+      `• Mobile / WhatsApp: ${phone.trim()}`,
+      `• Email: ${email.trim() || "N/A"}`,
+      `• Requirement Type: ${reqType}`,
+      `• Site & Project Scope: ${details.trim() || "N/A"}`,
       "",
-      "Note: I can attach my BOQ / SLD drawing directly in this WhatsApp chat if needed.",
+      "Please review and revert with your commercial estimate / quotation.",
+      "",
+      "Note: You can reply directly to this email or reach me on mobile/WhatsApp.",
     ].join("\n");
+  };
+
+  const handleWhatsapp = () => {
+    if (!org.trim() || !phone.trim()) {
+      setResult({
+        type: "error",
+        text: "Please enter your Company/Site Name and Mobile number first.",
+      });
+      return;
+    }
+    const msg = formatRfqText();
     window.open(
       `https://wa.me/${company.contact.whatsappNumber}?text=${encodeURIComponent(msg)}`,
       "_blank",
@@ -48,57 +61,32 @@ export default function DirectRfqForm() {
     );
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setResult(null);
-    setSubmitting(true);
-    try {
-      const res = await fetch("/api/rfq", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          source: "DIRECT_RFQ",
-          fullName: fullName.trim(),
-          company: org.trim(),
-          phone: phone.trim(),
-          email: email.trim(),
-          requirementType: reqType,
-          details: details.trim(),
-        }),
-      });
 
-      let data: { error?: string; referenceId?: string } = {};
-      const contentType = res.headers.get("content-type");
-      if (contentType && contentType.includes("application/json")) {
-        data = await res.json();
-      } else {
-        throw new Error(
-          "RFQ service is currently unreachable. Please connect directly via WhatsApp or call us."
-        );
-      }
-
-      if (!res.ok) throw new Error(data.error || "Submission failed.");
-
-      setResult({
-        type: "success",
-        text: `Quote Request Received — Ref #${data.referenceId}. Our engineering desk will review your requirement and respond within ${company.turnaroundHours} business hours.`,
-      });
-      setFullName("");
-      setOrg("");
-      setPhone("");
-      setEmail("");
-      setDetails("");
-    } catch (err) {
+    if (!org.trim() || !phone.trim()) {
       setResult({
         type: "error",
-        text:
-          err instanceof Error
-            ? err.message
-            : "Unable to send RFQ right now. Please use WhatsApp or call us directly.",
+        text: "Please enter your Company/Site Name and Mobile number.",
       });
-    } finally {
-      setSubmitting(false);
+      return;
     }
+
+    const recipient = company.contact.salesEmail || company.contact.email;
+    const subject = `[RFQ Enquiry] ${org.trim()} — ${reqType}`;
+    const body = formatRfqText();
+
+    const mailtoUrl = `mailto:${recipient}?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+
+    window.location.href = mailtoUrl;
+
+    setResult({
+      type: "success",
+      text: "Opening your native email app with pre-filled RFQ details. You can review, attach drawings/SLD, and send.",
+    });
   };
 
   return (
@@ -224,11 +212,10 @@ export default function DirectRfqForm() {
           </button>
           <button
             type="submit"
-            disabled={submitting}
-            className="inline-flex items-center justify-center gap-2 bg-copper hover:bg-copper-hover disabled:opacity-60 text-white font-bold text-sm py-3 px-4 rounded-md transition-colors"
+            className="inline-flex items-center justify-center gap-2 bg-copper hover:bg-copper-hover text-white font-bold text-sm py-3 px-4 rounded-md transition-colors"
           >
-            <Send className="w-4 h-4" />
-            <span>{submitting ? "Submitting..." : "Submit Official RFQ"}</span>
+            <Mail className="w-4 h-4" />
+            <span>Send RFQ via Email</span>
           </button>
         </div>
       </form>
