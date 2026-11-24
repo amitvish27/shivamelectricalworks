@@ -1,0 +1,60 @@
+{
+  "intro": "Explore a selection of our on-site HT/LT installations, custom-fabricated electrical panels, industrial wiring executions, and testing operations\u2014reflecting our focus on workmanship, neat cable management, and site safety.",
+  "categories": [
+    "All",
+    "HT & Substations",
+    "Control Panels & DBs",
+    "Industrial & Commercial Sites",
+    "Testing & Safety"
+  ],
+  "items": [
+    {
+      "id": "gal-01",
+      "category": "HT & Substations",
+      "title": "11 kV Outdoor Substation & Transformer Yard",
+      "caption": "[Capacity kVA] transformer erection with pole structure, GOS, and perimeter fencing at [Location].",
+      "location": "[MIDC / City]",
+      "image": "/images/gallery/substation.svg"
+    },
+    {
+      "id": "gal-02",
+      "category": "Control Panels & DBs",
+      "title": "Custom PCC & APFC Panel Assembly",
+      "caption": "16 SWG CRCA powder-coated main distribution and capacitor bank panel tested prior to dispatch.",
+      "location": "[Workshop / Plant]",
+      "image": "/images/gallery/pcc-panel.svg"
+    },
+    {
+      "id": "gal-03",
+      "category": "Industrial & Commercial Sites",
+      "title": "Industrial Cable Tray & Armoured Cabling",
+      "caption": "Structured overhead GI cable tray routing and power cable termination for [Factory / Plant Type].",
+      "location": "[MIDC / City]",
+      "image": "/images/gallery/cable-tray.svg"
+    },
+    {
+      "id": "gal-04",
+      "category": "HT & Substations",
+      "title": "DG Set & AMF Changeover Installation",
+      "caption": "[Capacity kVA] captive power backup with dedicated neutral/body earthing and compliant exhaust ducting.",
+      "location": "[Commercial Site]",
+      "image": "/images/gallery/dg-amf.svg"
+    },
+    {
+      "id": "gal-05",
+      "category": "Industrial & Commercial Sites",
+      "title": "Commercial Rising Mains & Distribution Boards",
+      "caption": "Floor-wise busbar trunking and modular MCB DB installation for [Building Type].",
+      "location": "[Mumbai / Thane]",
+      "image": "/images/gallery/rising-mains.svg"
+    },
+    {
+      "id": "gal-06",
+      "category": "Testing & Safety",
+      "title": "Pre-Commissioning Testing & Site Safety",
+      "caption": "Insulation resistance (Megger) and earth resistance verification by our PPE-equipped engineering team.",
+      "location": "[Project Site]",
+      "image": "/images/gallery/testing-safety.svg"
+    }
+  ]
+}
