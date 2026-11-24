@@ -1,0 +1,198 @@
+{
+  "name": "Shivam Electrical Works",
+  "shortName": "Shivam Electrical Works",
+  "tagline": "Industrial, Commercial & Residential Electrical Contracting",
+  "domain": "shivamelectricalworks.com",
+  "foundingYear": "[Founding Year]",
+  "yearsExperience": "[XX]+",
+  "licenseClass": "[License Class / License No.]",
+  "gstin": "[GSTIN Number]",
+  "turnaroundHours": "24",
+  "serviceHubs": [
+    "Mumbai",
+    "Thane",
+    "Navi Mumbai",
+    "Palghar",
+    "Pan-India"
+  ],
+  "contact": {
+    "phoneDisplay": "+91 98XXX XXXXX",
+    "whatsappNumber": "919800000000",
+    "email": "info@shivamelectricalworks.com",
+    "salesEmail": "rfq@shivamelectricalworks.com",
+    "workingHours": "Mon \u2013 Sat: 9:00 AM \u2013 7:00 PM",
+    "registeredOffice": "[Office / Gala No., Building Name, Industrial Estate, City \u2013 PIN, Maharashtra]",
+    "workshopAddress": "[Workshop / Panel Fabrication Unit Address, MIDC, Maharashtra]"
+  },
+  "hero": {
+    "headline": "Turnkey HT/LT Electrical Contracting & Engineered Power Distribution",
+    "subheadline": "Delivering reliable substations, custom control panels, industrial electrification, and statutory Electrical Inspectorate clearances for industrial, commercial, and residential projects across [Primary Region / Pan-India].",
+    "trustMetrics": [
+      {
+        "value": "[XX]+ Years",
+        "label": "Industrial & Commercial Execution"
+      },
+      {
+        "value": "HT & LT EPC",
+        "label": "Design, Supply, Erection & Testing"
+      },
+      {
+        "value": "IS Compliant",
+        "label": "Chief Electrical Inspectorate Ready"
+      },
+      {
+        "value": "< 24 Hours",
+        "label": "Engineering BOQ Turnaround"
+      }
+    ]
+  },
+  "about": {
+    "snapshot": "Established in [Founding Year] and headquartered in [City, Maharashtra], Shivam Electrical Works is a government-licensed electrical contracting and engineering firm delivering turnkey HT/LT installations, custom-fabricated control panels, and compliant power distribution systems. Backed by dedicated project engineers, supervisors, and certified technicians, we manage every stage\u2014from load planning and equipment supply to erection, testing, commissioning, and statutory utility approvals\u2014on schedule and without compromising workplace safety.",
+    "fullStory": [
+      "Shivam Electrical Works was founded in [Founding Year] with a clear engineering focus: delivering dependable, code-compliant electrical infrastructure that keeps factories, commercial complexes, hospitals, and residential developments running safely. Operating from our registered office in [City, Maharashtra] under Electrical Contractor License [License No.], we execute projects ranging from high-tension substations and overhead transmission lines to custom LT distribution panels, captive DG installations, and specialized earthing and protection networks.",
+      "Beyond site execution, our technical liaisoning team handles end-to-end coordination with state electricity supply utilities and the Chief Electrical Inspectorate\u2014securing service line clearances, statutory safety certificates, and timely power release so our clients face zero regulatory bottlenecks. Whether executing a greenfield industrial plant or attending an urgent breakdown, our team brings structured site planning, calibrated in-house testing equipment, and full accountability from mobilization to handover."
+    ],
+    "director": {
+      "name": "[Director Name]",
+      "designation": "[Proprietor / Managing Director]",
+      "bio": "[Director Name] brings [XX] years of hands-on experience in industrial and commercial electrical projects, business development, and utility compliance. Having led complex power distribution and turnkey electrification assignments across [Key Sectors], they lead Shivam Electrical Works with a focus on engineering discipline, transparent execution, and long-term client trust."
+    },
+    "vision": "To be a preferred electrical engineering and turnkey contracting partner across industrial, commercial, and infrastructure sectors by combining field-proven expertise with modern power distribution, automation, and safety practices.",
+    "mission": [
+      "Deliver cost-effective, value-added electrical contracting that achieves complete client satisfaction.",
+      "Build technical excellence through skilled engineering talent, disciplined site coordination, and reliable testing standards.",
+      "Uphold the highest standards of health, safety, environmental responsibility, and business ethics on every site."
+    ],
+    "coreValues": [
+      {
+        "title": "Integrity & Trust",
+        "desc": "Transparent specifications, honest timelines, and ethical execution in every contract."
+      },
+      {
+        "title": "Quality as a Standard",
+        "desc": "Rigorous material checks and pre-commissioning tests before every handover."
+      },
+      {
+        "title": "Safety First",
+        "desc": "Zero-compromise PPE compliance and hazard-free site supervision."
+      },
+      {
+        "title": "Complete Ownership",
+        "desc": "Single-point accountability from design and liaisoning through final commissioning."
+      },
+      {
+        "title": "Client Partnership",
+        "desc": "Responsive support that turns first-time projects into lasting relationships."
+      }
+    ],
+    "teamStrength": [
+      {
+        "role": "Project Managers",
+        "count": "[0X]"
+      },
+      {
+        "role": "Site Engineers",
+        "count": "[0X]"
+      },
+      {
+        "role": "Site Supervisors",
+        "count": "[0X]"
+      },
+      {
+        "role": "Site Storekeepers",
+        "count": "[0X]"
+      },
+      {
+        "role": "Licensed Technicians",
+        "count": "[XX]"
+      },
+      {
+        "role": "Skilled Electricians & Workers",
+        "count": "[XX]"
+      },
+      {
+        "role": "HT/LT Cable Jointers",
+        "count": "[0X]"
+      },
+      {
+        "role": "Panel Fabricators & Fitters",
+        "count": "[0X]"
+      }
+    ],
+    "testingEquipment": [
+      "HT Testing Kits & Digital Meggers",
+      "Earth Resistance Testers & Phase Sequence Meters",
+      "Digital Multimeters, Lux Meters & Thermo Meters",
+      "Transformer Oil Filtration & Oil Testing Units",
+      "Hydraulic Crimping Machines (up to 400 sq. mm)",
+      "Heavy-Duty Cable Jacks (10\u201315 Ton)",
+      "Welding Machines, Hammering & Stand Drills",
+      "Site Fire Extinguishers, Fire Blankets & First Aid Kits"
+    ],
+    "safetyPpe": [
+      {
+        "item": "Safety Helmets",
+        "use": "Mandatory head protection across multi-level work zones."
+      },
+      {
+        "item": "Full-Body Safety Harnesses",
+        "use": "Fall protection for overhead lines and exterior elevated installations."
+      },
+      {
+        "item": "Insulated & Handling Gloves",
+        "use": "Hand protection for panel wiring, cable pulling, cutting, and welding."
+      },
+      {
+        "item": "Safety Goggles",
+        "use": "Eye protection during grinding, gas welding, and civil chasing."
+      },
+      {
+        "item": "Insulated Safety Shoes",
+        "use": "Heavy-duty foot protection across industrial and substation yards."
+      }
+    ],
+    "qualityAssurance": "Quality at Shivam Electrical Works is built into every process step\u2014from verifying 16 SWG CRCA steel gauges and switchgear ratings during panel fabrication to conducting structured insulation resistance, earth continuity, phase sequence, and load tests prior to energizing. All installations are documented and verified against applicable IS standards and Chief Electrical Inspectorate norms."
+  },
+  "whyChooseUs": [
+    {
+      "code": "01",
+      "title": "Single-Point Turnkey Accountability",
+      "desc": "Complete design, supply, erection, testing, commissioning, and handover under one roof."
+    },
+    {
+      "code": "02",
+      "title": "Statutory & Utility Liaisoning",
+      "desc": "Experienced engineers managing Chief Electrical Inspectorate inspections, safety certificates, and power releases."
+    },
+    {
+      "code": "03",
+      "title": "Engineered Panel Fabrication",
+      "desc": "Dust- and vermin-proof 16 SWG CRCA steel enclosures with multi-tank pre-treatment and tested switchgear."
+    },
+    {
+      "code": "04",
+      "title": "Calibrated In-House Testing",
+      "desc": "Direct access to HT testing kits, meggers, earth testers, and oil filtration units for verified commissioning."
+    },
+    {
+      "code": "05",
+      "title": "Strict Site Safety Culture",
+      "desc": "100% PPE-compliant workforce backed by site supervision, fire safety gear, and worker insurance coverage."
+    },
+    {
+      "code": "06",
+      "title": "On-Time Project Delivery",
+      "desc": "Priority-area work planning and adequate resource mobilization built to meet tight project schedules."
+    },
+    {
+      "code": "07",
+      "title": "Rapid Breakdown & AMC Support",
+      "desc": "Responsive maintenance teams ready to minimize downtime across HT, LT, and DG installations."
+    },
+    {
+      "code": "08",
+      "title": "Multi-Sector Track Record",
+      "desc": "Adaptable engineering execution across factories, commercial towers, hospitals, pharma units, and residential colonies."
+    }
+  ]
+}

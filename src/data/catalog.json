@@ -1,0 +1,186 @@
+{
+  "categories": [
+    "All",
+    "HT Works",
+    "LT Works",
+    "Control Panels & DBs",
+    "Captive Power (DG)",
+    "Protection & Auxiliary",
+    "O&M & Liaisoning"
+  ],
+  "executionScopes": [
+    "Turnkey (Supply + Installation + Statutory Approvals)",
+    "Panel Fabrication & Supply Only",
+    "Installation, Testing & Commissioning Only",
+    "Preventive / Breakdown AMC"
+  ],
+  "items": [
+    {
+      "id": "ht-substation",
+      "category": "HT Works",
+      "tag": "HT SUBSTATION",
+      "title": "HT Substation Erection (Up to 33 kV / 132 kV)",
+      "spec": "Complete turnkey supply, erection, testing, and commissioning of indoor and outdoor HT substations as per utility norms."
+    },
+    {
+      "id": "ht-overhead",
+      "category": "HT Works",
+      "tag": "HT OVERHEAD",
+      "title": "Overhead HT/LT Transmission Lines & Pole Structures",
+      "spec": "Installation of RCC/RSJ spun poles, double/four-pole structures, GOS, horn-gap fuses, insulators, guysets, and conductor stringing."
+    },
+    {
+      "id": "ht-rmu-metering",
+      "category": "HT Works",
+      "tag": "HT SWITCHGEAR",
+      "title": "HT Metering Cubicles & Ring Main Units (RMU)",
+      "spec": "Supply and installation of incoming/outgoing isolator RMUs, 11 kV breakers, HRC fuse switches, metering cubicles, and HT cabling."
+    },
+    {
+      "id": "lt-transformer",
+      "category": "LT Works",
+      "tag": "LT TRANSFORMER",
+      "title": "Distribution Transformer Installation (Indoor / Outdoor)",
+      "spec": "Installation, earthing, oil filtration, and commissioning of 11/0.433 kV distribution transformers with complete statutory protection."
+    },
+    {
+      "id": "lt-cabling-busduct",
+      "category": "LT Works",
+      "tag": "CABLING & BUS DUCT",
+      "title": "HT/LT Power Cabling, Cable Trays & Bus Ducts",
+      "spec": "Structured laying, glanding, termination, and jointing of armoured HT/LT cables with GI/HDG cable trays and rising mains/bus ducts."
+    },
+    {
+      "id": "lt-electrification",
+      "category": "LT Works",
+      "tag": "ELECTRIFICATION",
+      "title": "Industrial, Commercial & Multistoried Electrification",
+      "spec": "Complete internal wiring, concealed/false-ceiling circuits, UPS networks, machinery power points, and indoor/outdoor lighting."
+    },
+    {
+      "id": "panel-pcc",
+      "category": "Control Panels & DBs",
+      "tag": "CONTROL PANEL",
+      "title": "Power Control Center (PCC) Panels",
+      "spec": "Custom-fabricated 16 SWG CRCA dust- and vermin-proof PCC panels with multi-tank pre-treatment for main power distribution."
+    },
+    {
+      "id": "panel-mcc",
+      "category": "Control Panels & DBs",
+      "tag": "CONTROL PANEL",
+      "title": "Motor Control Center (MCC) & Star-Delta Panels",
+      "spec": "Compartmentalized MCC, DOL, and Star-Delta starter panels engineered for industrial motors, pumps, HVAC, and process loads."
+    },
+    {
+      "id": "panel-apfc",
+      "category": "Control Panels & DBs",
+      "tag": "POWER QUALITY",
+      "title": "Automatic Power Factor Correction (APFC) Panels",
+      "spec": "Microprocessor-controlled automatic/manual capacitor bank panels maintaining power factor at or above 0.90\u20130.99."
+    },
+    {
+      "id": "panel-vfd-plc",
+      "category": "Control Panels & DBs",
+      "tag": "AUTOMATION PANEL",
+      "title": "VFD, PLC & Automation Control Panels",
+      "spec": "Variable frequency drive and PLC-integrated control panels for precision motor speed control and process automation."
+    },
+    {
+      "id": "panel-amf-ats",
+      "category": "Control Panels & DBs",
+      "tag": "DG CONTROL PANEL",
+      "title": "AMF, ATS & DG Synchronization Panels",
+      "spec": "Auto Mains Failure (AMF) and Auto Transfer Switch (ATS) panels ensuring seamless generator changeover during utility outages."
+    },
+    {
+      "id": "panel-db-pillar",
+      "category": "Control Panels & DBs",
+      "tag": "DISTRIBUTION BOARD",
+      "title": "MCB Distribution Boards & Outdoor Feeder Pillars",
+      "spec": "Weatherproof outdoor feeder pillars and modular MCB/MCCB distribution boards with double gasketing for lighting and power circuits."
+    },
+    {
+      "id": "dg-installation",
+      "category": "Captive Power (DG)",
+      "tag": "CAPTIVE POWER",
+      "title": "DG Set Installation, Earthing & Commissioning",
+      "spec": "End-to-end sizing, foundation coordination, acoustic/ventilation setup, neutral/body earthing, testing, and Inspectorate approval."
+    },
+    {
+      "id": "dg-cooling",
+      "category": "Captive Power (DG)",
+      "tag": "DG AUXILIARY",
+      "title": "Generator Cooling & Exhaust Systems",
+      "spec": "Erection and commissioning of remote radiators, heat exchangers, cooling towers, and compliant exhaust piping for industrial generators."
+    },
+    {
+      "id": "prot-lightning-spd",
+      "category": "Protection & Auxiliary",
+      "tag": "PROTECTION",
+      "title": "Lightning Detection, Protection & Surge Protection (SPD)",
+      "spec": "Conventional and ESE lightning arresters paired with low-voltage, signaling, and data surge protection devices for critical facilities."
+    },
+    {
+      "id": "prot-earthing",
+      "category": "Protection & Auxiliary",
+      "tag": "EARTHING",
+      "title": "Maintenance-Free Earthing & Exothermic Welding",
+      "spec": "Chemical/copper-bonded maintenance-free earthing systems and exothermic-welded earth grids tested for low soil resistance."
+    },
+    {
+      "id": "prot-security-fire",
+      "category": "Protection & Auxiliary",
+      "tag": "ELV & SAFETY",
+      "title": "Security Systems, Fire Wiring & Data Cabling",
+      "spec": "Structured fire-alarm wiring, CCTV/security system cabling, telephone networks, and computer communication infrastructure."
+    },
+    {
+      "id": "om-amc-liaisoning",
+      "category": "O&M & Liaisoning",
+      "tag": "O&M & APPROVALS",
+      "title": "Preventive/Breakdown AMC & Inspectorate Liaisoning",
+      "spec": "Rapid breakdown response, scheduled preventive maintenance for HT/LT/DG assets, and Chief Electrical Inspectorate safety approvals."
+    }
+  ],
+  "specBuilder": {
+    "sectors": [
+      "Industrial Factory / Manufacturing Plant",
+      "Commercial Complex / Mall / IT Park",
+      "Residential High-Rise / Housing Colony",
+      "Hospital / Pharma / Cleanroom",
+      "Substation & Utility Switchyard"
+    ],
+    "voltages": [
+      "Combined HT + LT Turnkey",
+      "HT Systems (11 kV / 22 kV / 33 kV+)",
+      "LT Systems (415 V \u2013 433 V)",
+      "Control Panels & Distribution Boards Only"
+    ],
+    "presets": {
+      "Combined HT + LT Turnkey": [
+        "ht-substation",
+        "lt-transformer",
+        "panel-pcc",
+        "om-amc-liaisoning"
+      ],
+      "HT Systems (11 kV / 22 kV / 33 kV+)": [
+        "ht-substation",
+        "ht-rmu-metering",
+        "prot-earthing",
+        "om-amc-liaisoning"
+      ],
+      "LT Systems (415 V \u2013 433 V)": [
+        "lt-cabling-busduct",
+        "lt-electrification",
+        "panel-apfc",
+        "prot-earthing"
+      ],
+      "Control Panels & Distribution Boards Only": [
+        "panel-pcc",
+        "panel-mcc",
+        "panel-apfc",
+        "panel-amf-ats"
+      ]
+    }
+  }
+}

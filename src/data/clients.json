@@ -1,0 +1,98 @@
+{
+  "intro": "Over the years, Shivam Electrical Works has delivered dependable electrical installations for small-scale industries, large manufacturing plants, commercial complexes, housing colonies, hospitals, hospitality venues, and public-sector facilities\u2014completing every assignment within stipulated timelines.",
+  "industries": [
+    "Manufacturing & Process Plants",
+    "Pharmaceuticals & Healthcare",
+    "Steel & Heavy Engineering",
+    "Commercial Towers & Retail Malls",
+    "Residential High-Rises & Townships",
+    "Hospitality & IT Parks",
+    "Public Utilities & Infrastructure"
+  ],
+  "logoPlaceholders": [
+    {
+      "name": "[Client Logo 01]",
+      "sector": "Manufacturing"
+    },
+    {
+      "name": "[Client Logo 02]",
+      "sector": "Infrastructure"
+    },
+    {
+      "name": "[Client Logo 03]",
+      "sector": "Pharmaceuticals"
+    },
+    {
+      "name": "[Client Logo 04]",
+      "sector": "Commercial Realty"
+    },
+    {
+      "name": "[Client Logo 05]",
+      "sector": "Steel & Engineering"
+    },
+    {
+      "name": "[Client Logo 06]",
+      "sector": "Healthcare"
+    },
+    {
+      "name": "[Client Logo 07]",
+      "sector": "Utilities"
+    },
+    {
+      "name": "[Client Logo 08]",
+      "sector": "Hospitality"
+    }
+  ],
+  "completedProjects": [
+    {
+      "sr": "01",
+      "client": "[Client Name \u2014 Industrial Plant]",
+      "scope": "[11 kV Substation, PCC/APFC Panels & LT Distribution]",
+      "location": "[City / MIDC, Maharashtra]"
+    },
+    {
+      "sr": "02",
+      "client": "[Client Name \u2014 Commercial Complex]",
+      "scope": "[Turnkey Electrification, Bus Ducts & DG AMF Panel]",
+      "location": "[Mumbai / Navi Mumbai]"
+    },
+    {
+      "sr": "03",
+      "client": "[Client Name \u2014 Pharma / Healthcare]",
+      "scope": "[Cleanroom Electricals, UPS Wiring & Earthing Grid]",
+      "location": "[Thane / Ambernath]"
+    },
+    {
+      "sr": "04",
+      "client": "[Client Name \u2014 Residential High-Rise]",
+      "scope": "[Meter Rooms, Feeder Pillars & Common Area Lighting]",
+      "location": "[Vasai-Virar / Pune]"
+    },
+    {
+      "sr": "05",
+      "client": "[Client Name \u2014 Heavy Engineering]",
+      "scope": "[MCC/VFD Panels, Cable Trays & Inspectorate Approvals]",
+      "location": "[Taloja / Khopoli]"
+    }
+  ],
+  "ongoingProjects": [
+    {
+      "sr": "01",
+      "client": "[Ongoing Client 01]",
+      "scope": "[HT/LT Turnkey Infrastructure & Inspectorate Approvals]",
+      "location": "[Site Location]"
+    },
+    {
+      "sr": "02",
+      "client": "[Ongoing Client 02]",
+      "scope": "[MCC/VFD Control Panels & Industrial Cabling]",
+      "location": "[Site Location]"
+    },
+    {
+      "sr": "03",
+      "client": "[Ongoing Client 03]",
+      "scope": "[DG Installation, Earthing & Lightning Protection]",
+      "location": "[Site Location]"
+    }
+  ]
+}
