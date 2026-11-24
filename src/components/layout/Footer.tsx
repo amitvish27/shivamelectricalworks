@@ -46,6 +46,8 @@ export default function Footer() {
             <li><Link href="/clients/" className="hover:text-amber-400">Clients &amp; Projects</Link></li>
             <li><Link href="/gallery/" className="hover:text-amber-400">Project Gallery</Link></li>
             <li><Link href="/contact/" className="hover:text-amber-400">Contact &amp; Direct RFQ</Link></li>
+            <li><Link href="/privacy/" className="hover:text-amber-400">Privacy Policy</Link></li>
+            <li><Link href="/terms/" className="hover:text-amber-400">Terms of Use</Link></li>
           </ul>
         </div>
 
@@ -88,9 +90,22 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-surface py-5 text-center text-xs text-slate-400">
-        © {new Date().getFullYear()} {company.name}. All rights reserved. •{" "}
-        {company.domain}
+      <div className="border-t border-surface py-5 text-xs text-slate-400">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
+          <div>
+            © {new Date().getFullYear()} {company.name}. All rights reserved. •{" "}
+            {company.domain}
+          </div>
+          <div className="flex items-center gap-4 text-slate-400">
+            <Link href="/privacy/" className="hover:text-amber-400 transition-colors">
+              Privacy Policy
+            </Link>
+            <span className="text-slate-600">•</span>
+            <Link href="/terms/" className="hover:text-amber-400 transition-colors">
+              Terms of Use
+            </Link>
+          </div>
+        </div>
       </div>
     </footer>
   );
