@@ -277,9 +277,11 @@ export default function HomePage() {
                 href="/gallery/"
                 className="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:border-copper transition-colors"
               >
-                <img
+                <Image
                   src={g.image}
                   alt={g.title}
+                  width={600}
+                  height={300}
                   className="w-full h-48 object-cover bg-primary"
                 />
                 <div className="p-4">

@@ -1,7 +1,14 @@
 import React from "react";
+import type { Metadata } from "next";
 import Image from "next/image";
 import { CheckCircle2, ShieldAlert, Wrench, Users } from "lucide-react";
 import company from "@/data/company.json";
+
+export const metadata: Metadata = {
+  title: "About Us & Safety Credentials",
+  description:
+    "Learn about Shivam Electrical Works, government-licensed electrical contracting team, leadership, testing instruments, and zero-compromise safety standards.",
+};
 
 export default function AboutPage() {
   return (

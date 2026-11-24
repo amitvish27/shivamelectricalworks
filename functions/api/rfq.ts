@@ -68,6 +68,21 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
       );
     }
 
+    const digitsOnly = phone.replace(/\D/g, "");
+    if (digitsOnly.length < 10) {
+      return Response.json(
+        { error: "Please enter a valid 10-digit mobile or phone number." },
+        { status: 400 }
+      );
+    }
+
+    if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      return Response.json(
+        { error: "Please enter a valid email address or leave it blank." },
+        { status: 400 }
+      );
+    }
+
     if (env.TURNSTILE_SECRET_KEY && turnstileToken) {
       const verifyRes = await fetch(
         "https://challenges.cloudflare.com/turnstile/v0/siteverify",
@@ -151,8 +166,12 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
 
     return Response.json({ ok: true, referenceId });
   } catch (err) {
+    console.error("RFQ execution error:", err);
     return Response.json(
-      { error: err instanceof Error ? err.message : "Unexpected server error." },
+      {
+        error:
+          "Internal server error while processing your request. Please contact us via phone or WhatsApp.",
+      },
       { status: 500 }
     );
   }

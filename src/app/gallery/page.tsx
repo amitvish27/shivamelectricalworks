@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import { X } from "lucide-react";
 import galleryData from "@/data/gallery.json";
 
@@ -56,9 +57,11 @@ export default function GalleryPage() {
                 onClick={() => setActiveItem(item)}
                 className="text-left bg-white border border-slate-200 hover:border-copper rounded-xl overflow-hidden shadow-sm transition-all group"
               >
-                <img
+                <Image
                   src={item.image}
                   alt={item.title}
+                  width={600}
+                  height={350}
                   className="w-full h-52 object-cover bg-primary group-hover:scale-[1.02] transition-transform"
                 />
                 <div className="p-4">
@@ -103,9 +106,11 @@ export default function GalleryPage() {
                 <X className="w-5 h-5" />
               </button>
             </div>
-            <img
+            <Image
               src={activeItem.image}
               alt={activeItem.title}
+              width={800}
+              height={500}
               className="w-full max-h-[60vh] object-contain bg-primary"
             />
             <div className="p-5">

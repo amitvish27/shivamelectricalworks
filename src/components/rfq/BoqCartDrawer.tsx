@@ -109,7 +109,17 @@ export default function BoqCartDrawer() {
           boqText: formatBoqText(false),
         }),
       });
-      const data = await res.json();
+
+      let data: { error?: string; referenceId?: string } = {};
+      const contentType = res.headers.get("content-type");
+      if (contentType && contentType.includes("application/json")) {
+        data = await res.json();
+      } else {
+        throw new Error(
+          "RFQ service is currently unreachable. Please submit via WhatsApp or call us directly."
+        );
+      }
+
       if (!res.ok) {
         throw new Error(data.error || "Failed to submit BOQ.");
       }

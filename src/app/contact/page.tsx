@@ -1,8 +1,15 @@
 import React from "react";
+import type { Metadata } from "next";
 import Image from "next/image";
 import { Clock, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import company from "@/data/company.json";
 import DirectRfqForm from "@/components/rfq/DirectRfqForm";
+
+export const metadata: Metadata = {
+  title: "Contact Commercial Desk & RFQ",
+  description:
+    "Initiate project RFQs, request site assessments, or discuss control panel fabrication directly with our engineering team.",
+};
 
 export default function ContactPage() {
   return (
