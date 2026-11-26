@@ -1,60 +1,131 @@
 {
-  "intro": "Explore a selection of our on-site HT/LT installations, custom-fabricated electrical panels, industrial wiring executions, and testing operations\u2014reflecting our focus on workmanship, neat cable management, and site safety.",
+  "intro": "Explore a selection of our on-site HT/LT installations, custom-fabricated electrical panels, industrial wiring executions, and testing operations—reflecting our focus on workmanship, neat cable management, and site safety.",
   "categories": [
     "All",
-    "HT & Substations",
     "Control Panels & DBs",
     "Industrial & Commercial Sites",
     "Testing & Safety"
   ],
   "items": [
     {
-      "id": "gal-01",
-      "category": "HT & Substations",
-      "title": "11 kV Outdoor Substation & Transformer Yard",
-      "caption": "[Capacity kVA] transformer erection with pole structure, GOS, and perimeter fencing at [Location].",
-      "location": "[MIDC / City]",
-      "image": "/images/gallery/substation.svg"
-    },
-    {
-      "id": "gal-02",
+      "id": "gal-07",
       "category": "Control Panels & DBs",
-      "title": "Custom PCC & APFC Panel Assembly",
-      "caption": "16 SWG CRCA powder-coated main distribution and capacitor bank panel tested prior to dispatch.",
-      "location": "[Workshop / Plant]",
-      "image": "/images/gallery/pcc-panel.svg"
+      "title": "Main LT PCC & Switchgear Room Installation",
+      "caption": "Multi-compartment floor-mounted LT PCC and switchgear assembly installed on a concrete plinth with rotary isolators, digital metering, and overhead cable tray.",
+      "location": "Electrical Panel Room",
+      "image": "/images/gallery/main-lt-pcc-switchgear-room.webp"
     },
     {
-      "id": "gal-03",
+      "id": "gal-08",
       "category": "Industrial & Commercial Sites",
-      "title": "Industrial Cable Tray & Armoured Cabling",
-      "caption": "Structured overhead GI cable tray routing and power cable termination for [Factory / Plant Type].",
-      "location": "[MIDC / City]",
-      "image": "/images/gallery/cable-tray.svg"
+      "title": "Raymond Retail Showroom Electrical & Lighting",
+      "caption": "Complete retail showroom electrification featuring illuminated storefront signage, warm display spotlights, and interior ambient lighting.",
+      "location": "Commercial Mall",
+      "image": "/images/gallery/raymond-showroom-lighting.webp"
     },
     {
-      "id": "gal-04",
-      "category": "HT & Substations",
-      "title": "DG Set & AMF Changeover Installation",
-      "caption": "[Capacity kVA] captive power backup with dedicated neutral/body earthing and compliant exhaust ducting.",
-      "location": "[Commercial Site]",
-      "image": "/images/gallery/dg-amf.svg"
-    },
-    {
-      "id": "gal-05",
-      "category": "Industrial & Commercial Sites",
-      "title": "Commercial Rising Mains & Distribution Boards",
-      "caption": "Floor-wise busbar trunking and modular MCB DB installation for [Building Type].",
-      "location": "[Mumbai / Thane]",
-      "image": "/images/gallery/rising-mains.svg"
-    },
-    {
-      "id": "gal-06",
+      "id": "gal-09",
       "category": "Testing & Safety",
-      "title": "Pre-Commissioning Testing & Site Safety",
-      "caption": "Insulation resistance (Megger) and earth resistance verification by our PPE-equipped engineering team.",
-      "location": "[Project Site]",
-      "image": "/images/gallery/testing-safety.svg"
+      "title": "Deep Borewell Earthing & Site Safety Execution",
+      "caption": "Mechanized earthing borewell drilling executed by our PPE-equipped site team for low-resistance protective earth pits.",
+      "location": "Industrial Site",
+      "image": "/images/gallery/earthing-borewell-drilling.webp"
+    },
+    {
+      "id": "gal-10",
+      "category": "Control Panels & DBs",
+      "title": "40 kVAR APFC & Capacitor Bank Panel",
+      "caption": "Custom-fabricated 40 kVAR automatic power factor correction panel with digital APFC relay, selector switches, indicator lamps, and dedicated busbar chamber.",
+      "location": "Commercial / Industrial",
+      "image": "/images/gallery/apfc-capacitor-bank-panel.webp"
+    },
+    {
+      "id": "gal-11",
+      "category": "Control Panels & DBs",
+      "title": "ATS Changeover & Ferruled Distribution Panel",
+      "caption": "Internal panel wiring showcasing motorized changeover/ATS switch, rotary isolator, MCB banks, and neatly ferruled terminal blocks.",
+      "location": "Panel Workshop",
+      "image": "/images/gallery/ats-distribution-panel-wiring.webp"
+    },
+    {
+      "id": "gal-12",
+      "category": "Control Panels & DBs",
+      "title": "3-Phase RYB Busbar & 4-Pole MCCB Assembly",
+      "caption": "Colour-coded RYB and neutral copper busbar termination onto a 4-pole MCCB isolator inside a powder-coated enclosure.",
+      "location": "Panel Workshop",
+      "image": "/images/gallery/ryb-busbar-mccb-assembly.webp"
+    },
+    {
+      "id": "gal-13",
+      "category": "Control Panels & DBs",
+      "title": "Legrand Lighting, Power & UPS DB Setup",
+      "caption": "Wall-mounted Legrand Lighting DB, Power DB, UPS DB, and 3-phase over-voltage cut-off device with structured conduit entry.",
+      "location": "Commercial Facility",
+      "image": "/images/gallery/legrand-db-installation-closed.webp"
+    },
+    {
+      "id": "gal-14",
+      "category": "Control Panels & DBs",
+      "title": "Three-Phase Power & Lighting DB Wiring",
+      "caption": "Open-door inspection of Legrand Power DB and Lighting DB displaying colour-coded 3-phase busbars, incomer MCCB, and outgoing MCB circuits.",
+      "location": "Commercial Facility",
+      "image": "/images/gallery/legrand-db-installation-open.webp"
+    },
+    {
+      "id": "gal-15",
+      "category": "Control Panels & DBs",
+      "title": "Floor-Standing MCB & Metering Panel",
+      "caption": "Powder-coated floor-standing distribution board with windowed MCB compartments, digital volt/amp meters, rotary isolator, and safety signage.",
+      "location": "Panel Workshop",
+      "image": "/images/gallery/floor-standing-distribution-panel.webp"
+    },
+    {
+      "id": "gal-16",
+      "category": "Industrial & Commercial Sites",
+      "title": "Park Avenue Showroom Lighting & Signage",
+      "caption": "Turnkey commercial retail electrical fit-out for Park Avenue including backlit fascia signage, linear ceiling fixtures, and track lighting.",
+      "location": "Commercial Mall",
+      "image": "/images/gallery/park-avenue-showroom-lighting.webp"
+    },
+    {
+      "id": "gal-17",
+      "category": "Industrial & Commercial Sites",
+      "title": "Retail Store Recessed & Linear Ceiling Lighting",
+      "caption": "Precision-aligned recessed LED downlights, perimeter spotlights, and linear HVAC/lighting ceiling integration for a retail outlet.",
+      "location": "Commercial Mall",
+      "image": "/images/gallery/retail-ceiling-lighting.webp"
+    },
+    {
+      "id": "gal-18",
+      "category": "Industrial & Commercial Sites",
+      "title": "Architectural Wall-Wash & Accent Lighting",
+      "caption": "Dual-direction architectural wall-wash installation combining recessed ceiling downlights with floor-recessed uplights.",
+      "location": "Commercial Interior",
+      "image": "/images/gallery/architectural-wall-wash-lighting.webp"
+    },
+    {
+      "id": "gal-19",
+      "category": "Industrial & Commercial Sites",
+      "title": "Multi-Lamp Recessed & Track Lighting",
+      "caption": "Commercial showroom ceiling featuring multi-lamp recessed LED fixtures and glass-partition track spotlights.",
+      "location": "Commercial Showroom",
+      "image": "/images/gallery/commercial-recessed-track-lighting.webp"
+    },
+    {
+      "id": "gal-20",
+      "category": "Industrial & Commercial Sites",
+      "title": "Overhead MS Conduit Ceiling Routing",
+      "caption": "Parallel heavy-gauge MS electrical conduit runs clamped neatly across concrete beams during commercial fit-out.",
+      "location": "Commercial Building",
+      "image": "/images/gallery/ms-conduit-ceiling-routing.webp"
+    },
+    {
+      "id": "gal-21",
+      "category": "Industrial & Commercial Sites",
+      "title": "Multi-Meter Board & Perforated Cable Tray",
+      "caption": "Centralized energy meter room with 15 digital sub-meters, numbered isolation switches, and overhead perforated GI cable tray.",
+      "location": "Meter Room",
+      "image": "/images/gallery/multi-meter-board-cable-tray.webp"
     }
   ]
 }

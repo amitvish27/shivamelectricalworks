@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import Image from "next/image";
 import { X } from "lucide-react";
 import galleryData from "@/data/gallery.json";
@@ -11,10 +11,21 @@ export default function GalleryPage() {
     (typeof galleryData.items)[number] | null
   >(null);
 
-  const visible =
-    category === "All"
-      ? galleryData.items
-      : galleryData.items.filter((i) => i.category === category);
+  const visible = useMemo(() => {
+    const active = category.trim().toLowerCase();
+    if (active === "all") return galleryData.items;
+    return galleryData.items.filter(
+      (i) => i.category.trim().toLowerCase() === active
+    );
+  }, [category]);
+
+  const counts = useMemo(() => {
+    const map: Record<string, number> = { All: galleryData.items.length };
+    for (const item of galleryData.items) {
+      map[item.category] = (map[item.category] ?? 0) + 1;
+    }
+    return map;
+  }, []);
 
   return (
     <div>
@@ -37,14 +48,15 @@ export default function GalleryPage() {
               <button
                 key={cat}
                 type="button"
+                aria-pressed={category === cat}
                 onClick={() => setCategory(cat)}
-                className={`px-3.5 py-2 rounded-md text-xs font-semibold transition-colors ${
+                className={`cursor-pointer px-3.5 py-2 rounded-md text-xs font-semibold transition-colors ${
                   category === cat
                     ? "bg-primary text-amber-400"
                     : "bg-white text-surface border border-slate-200 hover:border-copper"
                 }`}
               >
-                {cat}
+                {cat} ({counts[cat] ?? 0})
               </button>
             ))}
           </div>

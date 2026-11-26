@@ -6,7 +6,7 @@
   "foundingYear": "[Founding Year]",
   "yearsExperience": "[XX]+",
   "licenseClass": "[License Class / License No.]",
-  "gstin": "[GSTIN Number]",
+  "gstin": "27AERPV6344M2ZG",
   "turnaroundHours": "24",
   "serviceHubs": [
     "Mumbai",
@@ -16,17 +16,17 @@
     "Pan-India"
   ],
   "contact": {
-    "phoneDisplay": "+91 98XXX XXXXX",
-    "whatsappNumber": "919800000000",
-    "email": "info@shivamelectricalworks.com",
-    "salesEmail": "rfq@shivamelectricalworks.com",
+    "phoneDisplay": "+91 89762 81114",
+    "whatsappNumber": "918976281114",
+    "email": "shivamelectricalworks01@gmail.com",
+    "salesEmail": "[EMAIL_ADDRESS]",
     "workingHours": "Mon \u2013 Sat: 9:00 AM \u2013 7:00 PM",
-    "registeredOffice": "[Office / Gala No., Building Name, Industrial Estate, City \u2013 PIN, Maharashtra]",
-    "workshopAddress": "[Workshop / Panel Fabrication Unit Address, MIDC, Maharashtra]"
+    "registeredOffice": "Sai Sahara HSG SOC, Tata Power Line, B. R. Nagar, Thane, MH 400612",
+    "workshopAddress": "[ADDRESS]"
   },
   "hero": {
     "headline": "Turnkey HT/LT Electrical Contracting & Engineered Power Distribution",
-    "subheadline": "Delivering reliable substations, custom control panels, industrial electrification, and statutory Electrical Inspectorate clearances for industrial, commercial, and residential projects across [Primary Region / Pan-India].",
+    "subheadline": "Delivering reliable substations, custom control panels, industrial electrification, and statutory Electrical Inspectorate clearances for industrial, commercial, and residential projects across Pan-India.",
     "trustMetrics": [
       {
         "value": "[XX]+ Years",
@@ -47,15 +47,15 @@
     ]
   },
   "about": {
-    "snapshot": "Established in [Founding Year] and headquartered in [City, Maharashtra], Shivam Electrical Works is a government-licensed electrical contracting and engineering firm delivering turnkey HT/LT installations, custom-fabricated control panels, and compliant power distribution systems. Backed by dedicated project engineers, supervisors, and certified technicians, we manage every stage\u2014from load planning and equipment supply to erection, testing, commissioning, and statutory utility approvals\u2014on schedule and without compromising workplace safety.",
+    "snapshot": "Established in [Founding Year] and headquartered in Thane, Maharashtra, Shivam Electrical Works is a government-licensed electrical contracting and engineering firm delivering turnkey HT/LT installations, custom-fabricated control panels, and compliant power distribution systems. Backed by dedicated project engineers, supervisors, and certified technicians, we manage every stage\u2014from load planning and equipment supply to erection, testing, commissioning, and statutory utility approvals\u2014on schedule and without compromising workplace safety.",
     "fullStory": [
-      "Shivam Electrical Works was founded in [Founding Year] with a clear engineering focus: delivering dependable, code-compliant electrical infrastructure that keeps factories, commercial complexes, hospitals, and residential developments running safely. Operating from our registered office in [City, Maharashtra] under Electrical Contractor License [License No.], we execute projects ranging from high-tension substations and overhead transmission lines to custom LT distribution panels, captive DG installations, and specialized earthing and protection networks.",
+      "Shivam Electrical Works was founded in [Founding Year] with a clear engineering focus: delivering dependable, code-compliant electrical infrastructure that keeps factories, commercial complexes, hospitals, and residential developments running safely. Operating from our registered office in Thane, Maharashtra under Electrical Contractor License [License No.], we execute projects ranging from high-tension substations and overhead transmission lines to custom LT distribution panels, captive DG installations, and specialized earthing and protection networks.",
       "Beyond site execution, our technical liaisoning team handles end-to-end coordination with state electricity supply utilities and the Chief Electrical Inspectorate\u2014securing service line clearances, statutory safety certificates, and timely power release so our clients face zero regulatory bottlenecks. Whether executing a greenfield industrial plant or attending an urgent breakdown, our team brings structured site planning, calibrated in-house testing equipment, and full accountability from mobilization to handover."
     ],
     "director": {
-      "name": "[Director Name]",
-      "designation": "[Proprietor / Managing Director]",
-      "bio": "[Director Name] brings [XX] years of hands-on experience in industrial and commercial electrical projects, business development, and utility compliance. Having led complex power distribution and turnkey electrification assignments across [Key Sectors], they lead Shivam Electrical Works with a focus on engineering discipline, transparent execution, and long-term client trust."
+      "name": "Subhashchandra Vishwakarma",
+      "designation": "Proprietor",
+      "bio": "Subhashchandra Vishwakarma brings [XX] years of hands-on experience in industrial and commercial electrical projects, business development, and utility compliance. Having led complex power distribution and turnkey electrification assignments across [Key Sectors], they lead Shivam Electrical Works with a focus on engineering discipline, transparent execution, and long-term client trust."
     },
     "vision": "To be a preferred electrical engineering and turnkey contracting partner across industrial, commercial, and infrastructure sectors by combining field-proven expertise with modern power distribution, automation, and safety practices.",
     "mission": [

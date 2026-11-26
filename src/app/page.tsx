@@ -313,12 +313,21 @@ export default function HomePage() {
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
             {clientsData.logoPlaceholders.map((c) => (
               <div
                 key={c.name}
-                className="bg-techgray border border-slate-200 rounded-lg py-5 px-4 text-center"
+                className="bg-techgray border border-slate-200 rounded-lg p-4 text-center flex flex-col items-center"
               >
+                <div className="w-full h-14 bg-white border border-slate-100 rounded-md px-3 py-2 flex items-center justify-center mb-2.5">
+                  <Image
+                    src={c.logo}
+                    alt={`${c.name} logo`}
+                    width={130}
+                    height={44}
+                    className="max-h-10 w-auto max-w-full object-contain"
+                  />
+                </div>
                 <div className="font-display font-bold text-sm text-surface">
                   {c.name}
                 </div>
